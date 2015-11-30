@@ -1,0 +1,36 @@
+{
+  "name": "sql-composer",
+  "version": "0.0.0",
+  "description": "Composable SQL template strings for Node.js",
+  "author": {
+    "name": "Rafee Memon",
+    "email": "rafeememon@gmail.com",
+    "url": "https://github.com/rafeememon/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rafeememon/node-sql-composer.git"
+  },
+  "license": "MIT",
+  "homepage": "http://github.com/rafeememon/node-sql-composer",
+  "keywords": [
+    "es6",
+    "tagged",
+    "template",
+    "string",
+    "sql",
+    "query",
+    "statement",
+    "parameter"
+  ],
+  "main": "./lib/sql.js",
+  "scripts": {
+    "test": "eslint . && mocha"
+  },
+  "devDependencies": {
+    "babel": "^5.8.34",
+    "chai": "^3.4.1",
+    "eslint": "^1.10.2",
+    "mocha": "^2.3.4"
+  }
+}
