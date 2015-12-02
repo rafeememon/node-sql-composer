@@ -8,6 +8,12 @@ Composable SQL template strings for Node.js
 
 Programmatically constructing SQL queries is a tedious process when composing subqueries and collecting query parameters. This library utilizes [ES6 tagged template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings#Tagged_template_strings) to allow for easy parameterized query creation and composition.
 
+## Installation
+
+```
+npm install --save sql-composer
+```
+
 ## Usage
 
 ```js
