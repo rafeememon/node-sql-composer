@@ -23,6 +23,10 @@
     "statement",
     "parameter"
   ],
+  "files": [
+    "*.md",
+    "lib"
+  ],
   "main": "./lib/sql.js",
   "scripts": {
     "test": "standard && mocha"
