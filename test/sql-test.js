@@ -24,7 +24,19 @@ describe('sql', () => {
       values: [value1, value2]
     })
   })
-  it('should handle a nested query', () => {
+  it('should handle an empty nested query', () => {
+    expect(sql`a${sql``}b`).to.deep.equal({
+      text: 'ab',
+      values: []
+    })
+  })
+  it('should handle a nested query of a string', () => {
+    expect(sql`a${sql`b`}c`).to.deep.equal({
+      text: 'abc',
+      values: []
+    })
+  })
+  it('should handle a nested query of a variable', () => {
     const value = 'value'
     expect(sql`a${sql`b${value}c`}d`).to.deep.equal({
       text: 'ab?cd',
